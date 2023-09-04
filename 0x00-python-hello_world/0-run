@@ -1,3 +1,3 @@
 #!/bin/bash
-./$PYFILE
+chmod +x $PYFILE ; ./$PYFILE
 
