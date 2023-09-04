@@ -39,9 +39,17 @@ The Python code will be saved in the environment variable `$PYCODE`
 - Your program should be exactly 5 lines long
 
 
-`7-edges.py` -> A Python script that You are not allowed to use any loops or conditional statements
+`7-edges.py` -> A Python script that competed to print specific output.
+- You are not allowed to use any loops or conditional statements
 - Your program should be exactly 8 lines long
 - `word_first_3` should contain the first 3 letters of the variable `word`
 - `word_last_2` should contain the last 2 letters of the variable `word`
 - `middle_word` should contain the value of the variable `word` without the first and last letters
+
+
+`8-concat_edges.py` -> A Python script that print object-oriented programming with Python, followed by a new line.
+- You are not allowed to use any loops or conditional statements
+- Your program should be exactly 5 lines long
+- You are not allowed to create new variables
+- You are not allowed to use string literals
 
