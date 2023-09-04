@@ -13,3 +13,8 @@ The Python code will be saved in the environment variable `$PYCODE`
 
 `3-print_number.py` -> A Python script that print the integer stored in the variable `number`, followed by `Battery street`, followed by a new line.
 
+`4-print_float.py` -> A Python script that  print the float stored in the variable number with a precision of 2 digits.
+- The output of the program should be:
+	- Float:, followed by the float with only 2 digits
+	- followed by a new line
+
