@@ -64,3 +64,10 @@ The Python code will be saved in the environment variable `$PYCODE`
 - Requirements:
 Only these functions are allowed: `write`, `printf`, `putchar`, `puts`, `malloc`, `free`
 
+
+`100-write.py` -> A Python script that prints exactly and that piece of art is useful - Dora Korpar, 2015-10-19, followed by a new line.
+- Use the function write from the sys module
+- You are not allowed to use print
+- Your script should print to stderr
+- Your script should exit with the status code 1
+
