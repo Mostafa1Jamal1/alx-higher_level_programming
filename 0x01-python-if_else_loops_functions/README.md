@@ -114,6 +114,12 @@ Each element should be followed by a space
 You are not allowed to import any module
 
 
+`13-insert_number.c` -> a function in C that inserts a number into a sorted singly linked list.
+Prototype: listint_t *insert_node(listint_t **head, int number);
+Return: the address of the new node, or NULL if it failed
+
+
+`lists.h` -> header file
 
 `100-print_tebahpla.py` -> a program that prints the ASCII alphabet, in reverse order, alternating lowercase and uppercase (z in lowercase and Y in uppercase) , not followed by a new line.
 You can only use one print function with string format
