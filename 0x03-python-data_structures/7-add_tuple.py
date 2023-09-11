@@ -5,4 +5,3 @@ def add_tuple(tuple_a=(), tuple_b=()):
     n2 = tuple_a[1] if len(tuple_a) > 1 else 0
     n2 += tuple_b[1] if len(tuple_b) > 1 else 0
     return (n1, n2)
-
