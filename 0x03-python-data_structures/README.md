@@ -116,3 +116,6 @@ You are not allowed to use pop()
 You are not allowed to import any module
 
 
+`12-switch.py` -> a program to demonstrate swicthing values in one line
+
+
