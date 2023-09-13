@@ -101,3 +101,10 @@ Any file that does't have a description is for testing purposes
 - If the roman_string is not a string or None, return 0
 
 
+`100-weight_average.py` -> a function that returns the weighted average of all integers tuple (<score>, <weight>)
+
+- Prototype: def weight_average(my_list=[]):
+- Returns 0 if the list is empty
+- You are not allowed to import any module
+
+
