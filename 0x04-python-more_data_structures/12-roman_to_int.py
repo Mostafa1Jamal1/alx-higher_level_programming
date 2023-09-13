@@ -16,4 +16,7 @@ def roman_to_int(roman_string):
                 num += roman[roman_string[i]]
         else:
             return 0
-    return num
+    if num > 0 and num < 4000:
+        return num
+    else:
+        return 0
