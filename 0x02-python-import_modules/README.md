@@ -63,3 +63,7 @@ Make sure you are running your code in Python3.8.x (hidden_4.pyc has been compil
 
 You are not allowed to use * for importing or __import__
 Your code should not be executed when imported
+
+`102-magic_calculation.py` -> Python function def magic_calculation(a, b): that does exactly like a  specific Python bytecode
+
+
