@@ -73,3 +73,9 @@ Any file that does't have a description is for testing purposes
 - You are not allowed to import any module
 
 
+`5-raise_exception.py` -> a function that raises a type exception.
+
+- Prototype: def raise_exception():
+- You are not allowed to import any module
+
+
