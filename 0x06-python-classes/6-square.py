@@ -32,7 +32,7 @@ class Square:
             if self.__position[0] > 0:
                 print(" " * self.__position[0], end="")
             print("#" * self.__size)
-        if self.__size == 0:
+        if self.__size == 0 and self.__position[0] == 0:
             print()
 
     @property
