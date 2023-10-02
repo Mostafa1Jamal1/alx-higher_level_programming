@@ -56,3 +56,10 @@ Any file that does't have a description -if there any- is for testing purposes
 	* Can be any type
 
 
+`8-rectangle.py` -> add to the previous module:
+- Static method def bigger_or_equal(rect_1, rect_2): that returns the biggest rectangle based on the area
+	* rect_1 must be an instance of Rectangle, otherwise raise a TypeError exception with the message rect_1 must be an instance of Rectangle
+	* rect_2 must be an instance of Rectangle, otherwise raise a TypeError exception with the message rect_2 must be an instance of Rectangle
+	* Returns rect_1 if both have the same area value
+
+
