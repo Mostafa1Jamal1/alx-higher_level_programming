@@ -42,3 +42,10 @@ Any file that does't have a description -if there any- is for testing purposes
 - Print the message Bye rectangle... (... being 3 dots not ellipsis) when an instance of Rectangle is deleted
 
 
+`6-rectangle.py` -> add to the previous module:
+- Public class attribute number_of_instances:
+	* Initialized to 0
+	* Incremented during each new instance instantiation
+	* Decremented during each instance deletion
+
+
