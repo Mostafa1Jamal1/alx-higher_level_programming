@@ -22,22 +22,6 @@ class Rectangle:
         self.width = width
         Rectangle.number_of_instances += 1
 
-    def __str__(self):
-        string = ""
-        if self.__width == 0:
-            return string
-        for row in range(self.__height):
-            string += str(self.print_symbol) * self.__width
-            if row != self.__height - 1:
-                string += "\n"
-        return string
-
-    def __repr__(self):
-        return "Rectangle({:d}, {:d})".format(self.__width, self.height)
-
-    def __del__(self):
-        Rectangle.number_of_instances -= 1
-        print("Bye rectangle...")
 
     def area(self):
         '''returns the rectangle area'''
@@ -82,6 +66,25 @@ class Rectangle:
         else:
             self.__height = value
 
+
+    def __str__(self):
+        string = ""
+        if self.__width == 0:
+            return string
+        for row in range(self.__height):
+            string += str(self.print_symbol) * self.__width
+            if row != self.__height - 1:
+                string += "\n"
+        return string
+
+    def __repr__(self):
+        return "Rectangle({:d}, {:d})".format(self.__width, self.height)
+
+    def __del__(self):
+        Rectangle.number_of_instances -= 1
+        print("Bye rectangle...")
+
+
     @staticmethod
     def bigger_or_equal(rect_1, rect_2):
         if type(rect_1) is not Rectangle:
@@ -96,4 +99,4 @@ class Rectangle:
     @classmethod
     def square(cls, size=0):
         '''returns a new Rectangle instance with width == height == size'''
-        return Rectangle(size, size)
+        return cls(size, size)
