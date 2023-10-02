@@ -4,7 +4,7 @@
 
 class Rectangle:
     '''There is two private attributes width, height'''
-    
+
     def __init__(self, width=0, height=0):
         """Instantiation with optional width and height
         Args:
@@ -23,7 +23,7 @@ class Rectangle:
     def width(self, value):
         '''The setter of width
         the value must be an integer and >= 0'''
-        if type(value) != int:
+        if type(value) is not int:
             raise TypeError('width must be an integer')
         elif value < 0:
             raise ValueError('width must be >= 0')
@@ -39,10 +39,9 @@ class Rectangle:
     def height(self, value):
         '''Set the value of height
         the value must be an integer and >= 0'''
-        if type(value) != int:
+        if type(value) is not int:
             raise TypeError('height must be an integer')
         elif value < 0:
             raise ValueError('height must be >= 0')
         else:
             self.__height = value
-
