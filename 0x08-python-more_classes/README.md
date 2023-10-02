@@ -34,3 +34,7 @@ Any file that does't have a description -if there any- is for testing purposes
 	* if width or height is equal to 0, return an empty string
 
 
+`4-rectangle.py` -> add to the previous module:
+- repr() should return a string representation of the rectangle to be able to recreate a new instance by using eval()
+
+
