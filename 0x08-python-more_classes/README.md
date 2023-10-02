@@ -49,3 +49,10 @@ Any file that does't have a description -if there any- is for testing purposes
 	* Decremented during each instance deletion
 
 
+`7-rectangle.py` -> add to the previous module:
+- Public class attribute print_symbol:
+	* Initialized to #
+	* Used as symbol for string representation
+	* Can be any type
+
+
