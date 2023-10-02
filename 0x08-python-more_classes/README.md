@@ -38,3 +38,7 @@ Any file that does't have a description -if there any- is for testing purposes
 - repr() should return a string representation of the rectangle to be able to recreate a new instance by using eval()
 
 
+`5-rectangle.py` -> add to the previous module:
+- Print the message Bye rectangle... (... being 3 dots not ellipsis) when an instance of Rectangle is deleted
+
+
