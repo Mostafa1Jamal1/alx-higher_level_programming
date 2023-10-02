@@ -23,3 +23,8 @@ Any file that does't have a description -if there any- is for testing purposes
 - Instantiation with optional width and height: def __init__(self, width=0, height=0):
 - You are not allowed to import any module
 
+`2-rectangle.py` -> add to the previous module with:
+- Public instance method: def area(self): that returns the rectangle area
+- Public instance method: def perimeter(self): that returns the rectangle perimeter:
+	* if width or height is equal to 0, perimeter is equal to 0
+
