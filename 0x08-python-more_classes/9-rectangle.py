@@ -22,7 +22,6 @@ class Rectangle:
         self.width = width
         Rectangle.number_of_instances += 1
 
-
     def area(self):
         '''returns the rectangle area'''
         return self.__width * self.__height
@@ -66,7 +65,6 @@ class Rectangle:
         else:
             self.__height = value
 
-
     def __str__(self):
         string = ""
         if self.__width == 0:
@@ -83,7 +81,6 @@ class Rectangle:
     def __del__(self):
         Rectangle.number_of_instances -= 1
         print("Bye rectangle...")
-
 
     @staticmethod
     def bigger_or_equal(rect_1, rect_2):
