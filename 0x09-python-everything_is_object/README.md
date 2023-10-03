@@ -49,4 +49,10 @@ The answer in the file
 >>> print(s1 is s2)
 The answer in the file
 
+`8-answer.txt` -> What do these 3 lines print?
+>>> s1 = "Best School"
+>>> s2 = "Best School"
+>>> print(s1 == s2)
+The answer in the file
+
 
