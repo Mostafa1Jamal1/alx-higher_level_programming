@@ -56,3 +56,9 @@ The answer in the file
 The answer in the file
 
 
+`9-answer.txt` -> What do these 3 lines print?
+>>> s1 = "Best School"
+>>> s2 = "Best School"
+>>> print(s1 is s2)
+The answer in the file
+
