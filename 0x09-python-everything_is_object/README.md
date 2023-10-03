@@ -128,3 +128,82 @@ print(l)
 
 The answer in the file
 
+
+
+`18-answer.txt` -> What does this script print?
+def assign_value(n, v):
+    n = v
+
+l1 = [1, 2, 3]
+l2 = [4, 5, 6]
+assign_value(l1, l2)
+print(l1)
+
+The answer in the file
+
+
+`19-copy_list.py` -> a function def copy_list(l): that returns a copy of a list.
+- The input list can contain any type of objects
+- Your file should be maximum 3-line long (no documentation needed)
+- You are not allowed to import any module
+
+
+`20-answer.txt` -> Is a a tuple?
+a = ()
+The answer in the file
+
+
+`21-answer.txt` -> Is a a tuple?
+-> a = (1, 2)
+The answer in the file
+
+
+`22-answer.txt` -> Is a a tuple?
+a = (1)
+The answer in the file
+
+
+`23-answer.txt` -> Is a a tuple?
+a = (1, )
+The answer in the file
+
+
+`24-answer.txt` -> What does this script print?
+a = (1)
+b = (1)
+a is b
+The answer in the file
+
+
+`25-answer.txt` -> What does this script print?
+a = (1, 2)
+b = (1, 2)
+a is b
+The answer in the file
+
+
+`26-answer.txt` -> What does this script print?
+a = ()
+b = ()
+a is b
+The answer in the file
+
+
+`27-answer.txt` -> Will the last line of this script print 139926795932424?
+>>> id(a)
+139926795932424
+>>> a
+[1, 2, 3, 4]
+>>> a = a + [5]
+>>> id(a)
+The answer in the file
+
+
+`28-answer.txt` -> Will the last line of this script print 139926795932424?
+>>> a
+[1, 2, 3]
+>>> id (a)
+139926795932424
+>>> a += [4]
+>>> id(a)
+The answer in the file
