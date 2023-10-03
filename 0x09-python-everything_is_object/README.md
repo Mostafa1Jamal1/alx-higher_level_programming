@@ -118,4 +118,13 @@ print(a)
 The answer in the file
 
 
+`17-answer.txt` -> What does this script print?
+def increment(n):
+    n.append(4)
+
+l = [1, 2, 3]
+increment(l)
+print(l)
+
+The answer in the file
 
