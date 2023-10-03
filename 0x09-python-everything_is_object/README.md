@@ -107,3 +107,15 @@ print(l2)
 The answer in the file
 
 
+`16-answer.txt` -> What does this script print?
+def increment(n):
+    n += 1
+
+a = 1
+increment(a)
+print(a)
+
+The answer in the file
+
+
+
