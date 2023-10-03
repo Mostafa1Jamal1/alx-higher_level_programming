@@ -16,3 +16,6 @@ Returns an integer: the addition of a and b
 You are not allowed to import any module
 
 
+there is too much on my plate
+so I will continue this documentation later
+sorry for that
