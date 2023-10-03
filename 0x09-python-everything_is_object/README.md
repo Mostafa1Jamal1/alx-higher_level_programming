@@ -36,3 +36,10 @@ The answer in the file
 >>> b = a + 1
 The answer in the file
 
+
+`6-answer.txt` -> What do these 3 lines print?
+>>> s1 = "Best School"
+>>> s2 = s1
+>>> print(s1 == s2)
+The answer in the file
+
