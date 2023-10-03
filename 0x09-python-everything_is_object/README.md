@@ -30,3 +30,9 @@ The answer in the file
 >>> b = a
 The answer in the file
 
+
+`5-answer.txt` -> In the following code, do a and b point to the same object?
+>>> a = 89
+>>> b = a + 1
+The answer in the file
+
