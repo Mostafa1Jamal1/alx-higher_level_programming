@@ -69,3 +69,10 @@ The answer in the file
 >>> print(l1 == l2)
 The answer in the file
 
+
+`11-answer.txt` -> What do these 3 lines print?
+>>> l1 = [1, 2, 3]
+>>> l2 = [1, 2, 3]
+>>> print(l1 is l2)
+The answer in the file
+
