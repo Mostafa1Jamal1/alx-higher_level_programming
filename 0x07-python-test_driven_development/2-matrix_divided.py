@@ -1,5 +1,9 @@
 #!/usr/bin/python3
+'''There is only one function in this module'''
+
+
 def matrix_divided(matrix, div):
+    '''divides all elements of a matrix.'''
 
     msg = 'matrix must be a matrix (list of lists) of integers/floats'
 
