@@ -25,6 +25,9 @@ But the arguments will be casted to integers if they are float
     >>> add_integer(2.3, 3)
     5
 
+    >>> add_integer(2.98, 3)
+    5
+
 Negative Numbers
 ================
 
