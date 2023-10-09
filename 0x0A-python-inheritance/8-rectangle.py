@@ -4,10 +4,11 @@
 
 BaseGeometry = __import__('7-base_geometry').BaseGeometry
 
+
 class Rectangle(BaseGeometry):
     '''A subclass from BaseGeometry that:
     Instantiation with width and height'''
-    
+
     def __init__(self, width, height):
         '''Instantiation with width and height'''
         self.integer_validator("width", width)
