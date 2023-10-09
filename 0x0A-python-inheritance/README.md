@@ -42,4 +42,11 @@ You are not allowed to import any module
 
 `5-base_geometry.py` -> an empty class BaseGeometry.
 
+
+
+`6-base_geometry.py` -> a class BaseGeometry (based on 5-base_geometry.py).
+
+Public instance method: def area(self): that raises an Exception with the message area() is not implemented
+You are not allowed to import any module
+
  
