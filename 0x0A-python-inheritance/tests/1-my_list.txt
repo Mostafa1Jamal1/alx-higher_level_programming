@@ -1,0 +1,60 @@
+#1-my_list.txt:
+==============
+
+tests for 1-my_list.py module:
+=============================
+
+
+
+##first of all importt the class:
+===============================
+
+	>>> MyList = __import__('1-my_list').MyList
+
+
+##And create an object of the imported class:
+============================================
+
+	>>> my_list = MyList()
+
+
+##Check if the class is a subclass of list:
+==========================================
+
+	>>> issubclass(MyList, list)
+	True
+
+
+##Check if we can create a list of the new object:
+=================================================
+
+	>>> my_list.append(1)
+	>>> my_list.append(4)
+	>>> my_list.append(2)
+	>>> my_list.append(3)
+	>>> my_list.append(5)
+
+
+##Check if print_sorted work correctly and didn't change the original:
+=====================================================================
+
+	>>> my_list.print_sorted()
+	[1, 2, 3, 4, 5]
+	>>> print(my_list)
+	[1, 4, 2, 3, 5]
+
+##Make a list in one line:
+=========================
+
+	>>> my_list = MyList([1, 5, 3, 4, 2])
+	>>> print(my_list)
+	[1, 5, 3, 4, 2]
+
+
+##Check now:
+===========
+
+	>>> my_list.print_sorted()
+	[1, 2, 3, 4, 5]
+
+
