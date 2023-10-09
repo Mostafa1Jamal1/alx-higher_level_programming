@@ -39,4 +39,7 @@ You are not allowed to import any module
 Prototype: def inherits_from(obj, a_class):
 You are not allowed to import any module
 
+
+`5-base_geometry.py` -> an empty class BaseGeometry.
+
  
