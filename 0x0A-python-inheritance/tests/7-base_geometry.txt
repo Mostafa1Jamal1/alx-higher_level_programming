@@ -49,6 +49,16 @@ doctest for 7-base_geometry.py
         ...
         TypeError: name must be an integer
 
+	>>> bg.integer_validator("name", True)
+        Traceback (most recent call last):
+        ...
+        TypeError: name must be an integer
+
+	>>> bg.integer_validator("name")
+        Traceback (most recent call last):
+        ...
+	TypeError: integer_validator() missing 1 required positional argument: 'value'
+
 #Case of value = 0:
 ==================
 
