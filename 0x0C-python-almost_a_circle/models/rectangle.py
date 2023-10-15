@@ -67,3 +67,7 @@ class Rectangle(Base):
         '''Setter for y'''
         self.__validatePosInt("y", value)
         self.__y = value
+
+    def area(self):
+        '''returns the rectangle area'''
+        return self.__width * self.__height
