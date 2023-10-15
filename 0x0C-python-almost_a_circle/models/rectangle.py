@@ -68,6 +68,12 @@ class Rectangle(Base):
         self.__validatePosInt("y", value)
         self.__y = value
 
+    def __str__(self):
+        '''return [Rectangle] (<id>) <x>/<y> - <width>/<height>'''
+        s = "[Rectangle] " + f"({self.id}) {self.__x}/{self.__y}"
+        s = s + f" - {self.__width}/{self.__height}"
+        return s
+
     def area(self):
         '''returns the rectangle area'''
         return self.__width * self.__height
