@@ -92,9 +92,15 @@ class Rectangle(Base):
         '''Update arguments as values to each attribute'''
         attrs = ("id", "width", "height", "x", "y")
         if len(args) > 0:
-            argv = args[:5] #To handle if more than 4 arguments passed
+            argv = args[:5] #To handle if more than 5 arguments passed
             for i, arg in enumerate(argv):
                 setattr(self, attrs[i], arg)
         else:
             for key, value in kwargs.items():
                 setattr(self, key, value)
+
+    def to_dictionary(self):
+        '''returns the dictionary representation of a Rectangle'''
+        return {"id": self.id, "width": self.width, "height": self.height,
+                "x": self.x, "y": self.y}
+
