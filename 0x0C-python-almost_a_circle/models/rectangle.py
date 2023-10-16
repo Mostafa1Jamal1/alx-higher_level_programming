@@ -70,9 +70,10 @@ class Rectangle(Base):
 
     def __str__(self):
         '''return [Rectangle] (<id>) <x>/<y> - <width>/<height>'''
-        s = "[Rectangle] " + f"({self.id}) {self.__x}/{self.__y}"
-        s = s + f" - {self.__width}/{self.__height}"
-        return s
+        return "[Rectangle] ({}) {}/{} - {}/{}".format(self.id,
+                                                       self.x, self.y,
+                                                       self.width,
+                                                       self.height)
 
     def area(self):
         '''returns the rectangle area'''
