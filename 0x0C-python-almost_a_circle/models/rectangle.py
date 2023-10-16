@@ -87,10 +87,13 @@ class Rectangle(Base):
                 print(" " * self.__x, end="")
             print("#" * self.__width)
 
-    def update(self, *args):
-        '''assigns an argument to each attribute'''
+    def update(self, *args, **kwargs):
+        '''Update arguments as values to each attribute'''
         attrs = ("id", "width", "height", "x", "y")
         if len(args) > 0:
             argv = args[:5] #To handle if more than 4 arguments passed
             for i, arg in enumerate(argv):
                 setattr(self, attrs[i], arg)
+        else:
+            for key, value in kwargs.items():
+                setattr(self, key, value)
