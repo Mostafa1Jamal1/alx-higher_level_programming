@@ -35,7 +35,7 @@ class Base:
             return json.loads(json_string)
 
     @classmethod
-    def save_to_file(cls, list_objs):  # Two red checks here
+    def save_to_file(cls, list_objs):
         '''writes the JSON string representation of list_objs to a file'''
         list_dict = []
         if list_objs:
@@ -48,9 +48,8 @@ class Base:
     def create(cls, **dictionary):  # One red check here
         '''returns an instance with all attributes already set'''
         ob = cls(1, 1)
-        if ob:
-            ob.update(**dictionary)
-            return ob
+        ob.update(**dictionary)
+        return ob
 
     @classmethod
     def load_from_file(cls):
