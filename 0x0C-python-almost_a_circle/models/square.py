@@ -10,12 +10,12 @@ class Square(Rectangle):
     def __init__(self, size, x=0, y=0, id=None):
         '''Class constructor'''
         super().__init__(size, size, x, y, id)
-    
+
     def __str__(self):
         '''return [Square] (<id>) <x>/<y> - <size>'''
         return "[Square] ({}) {}/{} - {}".format(self.id,
                                                  self.x, self.y, self.width)
-    
+
     @property
     def size(self):
         '''Getter for size'''
@@ -31,7 +31,7 @@ class Square(Rectangle):
         '''Update arguments as values to each attribute'''
         attrs = ("id", "size", "x", "y")
         if len(args) > 0:
-            argv = args[:4] #To handle if more than 4 arguments passed
+            argv = args[:4]  # To handle if more than 4 arguments passed
             for i, arg in enumerate(argv):
                 setattr(self, attrs[i], arg)
         else:
