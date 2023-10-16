@@ -3,6 +3,7 @@
 
 
 import json
+from os.path import exists
 
 
 class Base:
@@ -34,7 +35,7 @@ class Base:
             return json.loads(json_string)
 
     @classmethod
-    def save_to_file(cls, list_objs):
+    def save_to_file(cls, list_objs):  # Two red checks here
         '''writes the JSON string representation of list_objs to a file'''
         list_dict = []
         for ob in list_objs:
@@ -43,9 +44,20 @@ class Base:
             afile.write(cls.to_json_string(list_dict))
 
     @classmethod
-    def create(cls, **dictionary):
+    def create(cls, **dictionary):  # One red check here
         '''returns an instance with all attributes already set'''
         ob = cls(1, 1)
         if ob:
             ob.update(**dictionary)
             return ob
+
+    @classmethod
+    def load_from_file(cls):
+        '''returns a list of instances'''
+        listofobj = []
+        if exists(cls.__name__ + ".json"):
+            with open(cls.__name__ + ".json", "r", encoding="utf-8") as afile:
+                list_dict = cls.from_json_string(afile.read())
+                for ob in list_dict:
+                    listofobj.append(cls.create(**ob))
+        return listofobj
