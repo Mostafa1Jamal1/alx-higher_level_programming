@@ -41,3 +41,11 @@ class Base:
             list_dict.append(ob.to_dictionary())
         with open((cls.__name__ + ".json"), "w", encoding="utf-8") as afile:
             afile.write(cls.to_json_string(list_dict))
+
+    @classmethod
+    def create(cls, **dictionary):
+        '''returns an instance with all attributes already set'''
+        ob = cls(1, 1)
+        if ob:
+            ob.update(**dictionary)
+            return ob
