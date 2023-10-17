@@ -39,4 +39,3 @@ class TestBaseClass(unittest.TestCase):
             b1.__nb_objects
         with self.assertRaises(AttributeError):
             b1.nb_objects
-

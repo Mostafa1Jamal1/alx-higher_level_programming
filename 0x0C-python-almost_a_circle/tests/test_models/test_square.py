@@ -9,4 +9,3 @@ from models.base import Base
 
 class TestSquareClass(unittest.TestCase):
     '''Test class for Square class'''
-

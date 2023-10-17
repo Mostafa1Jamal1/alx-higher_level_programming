@@ -10,6 +10,7 @@ from models.base import Base
 class TestRectangleClass(unittest.TestCase):
     '''Test class for the Rectangle class'''
 # The setUp and tearDown of all tests
+
     def setUp(self):
         '''Befor each test'''
         Base._Base__nb_objects = 0
@@ -19,11 +20,13 @@ class TestRectangleClass(unittest.TestCase):
         Base._Base__nb_objects = 0
 # **************************************************************************
 # Check inheritance from Base
+
     def test_inheritationfromBase(self):
         '''Test if the Rectangle is inherited from Base'''
         self.assertTrue(issubclass(Rectangle, Base))
 # **************************************************************************
 # Check the existing of all the attributes
+
     def test_attributs(self):
         '''test that attributes exists'''
         r1 = Rectangle(10, 2)
@@ -34,6 +37,7 @@ class TestRectangleClass(unittest.TestCase):
         self.assertTrue(hasattr(r1, 'id'))
 # **************************************************************************
 # Check Validation of all setters about type
+
     def test_validation_Width_type(self):
         '''Test the validation of width of type'''
         with self.assertRaisesRegex(TypeError, "width must be an integer"):
@@ -103,6 +107,7 @@ class TestRectangleClass(unittest.TestCase):
             r1 = Rectangle(10, 2, 3, 10.25)
 # **************************************************************************
 # Check Validation of all setters about value
+
     def test_validation_width_value(self):
         '''Test the validation of width of value'''
         with self.assertRaisesRegex(ValueError, "width must be > 0"):
@@ -128,6 +133,7 @@ class TestRectangleClass(unittest.TestCase):
             r1 = Rectangle(10, 2, 3, -2)
 # **************************************************************************
 # Check with different number of arguments
+
     def test_TwoTipicalArgs(self):
         '''Testing the case of two typical arguments'''
         r1 = Rectangle(10, 2)
