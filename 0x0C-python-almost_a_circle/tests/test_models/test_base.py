@@ -1,7 +1,6 @@
 #!/usr/bin/python3
 
 
-
 import unittest
 from models.base import Base
 
@@ -35,8 +34,9 @@ class TestBaseClass(unittest.TestCase):
 
     def test_raisingError(self):
         '''WE DO NOT have to test the type of id'''
-        pass
+        b1 = Base()
+        with self.assertRaises(AttributeError):
+            b1.__nb_objects
+        with self.assertRaises(AttributeError):
+            b1.nb_objects
 
-    '''Test that id is unique'''
-
-    '''Test to use an existing id'''
