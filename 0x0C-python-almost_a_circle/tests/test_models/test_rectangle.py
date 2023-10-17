@@ -2,7 +2,9 @@
 '''Module of test suit for the class Rectangle'''
 
 
+from unittest.mock import patch
 import unittest
+from io import StringIO
 from models.rectangle import Rectangle
 from models.base import Base
 
@@ -182,3 +184,59 @@ class TestRectangleClass(unittest.TestCase):
         with self.assertRaises(TypeError):
             r1 = Rectangle(10, 2, 3, 4, 15, 20)
 # ***************************************************************************
+# Check for area method
+
+    def test_areaMethodTypical(self):
+        '''Testing the normal cases of using the area method'''
+        r1 = Rectangle(3, 2)
+        r2 = Rectangle(2, 10)
+        r3 = Rectangle(8, 7, 0, 0, 12)
+        self.assertEqual(r1.area(), 6)
+        self.assertEqual(r2.area(), 20)
+        self.assertEqual(r3.area(), 56)
+
+    def test_passArg(self):
+        '''Testing when passing arguments'''
+        r1 = Rectangle(3, 2)
+        with self.assertRaises(TypeError):
+            r1.area(10)
+# ***************************************************************************
+# Test the display method
+
+    def test_nomal(self):
+        '''Testing the normal cases of using the display method'''
+        r1 = Rectangle(4, 6)
+        expected = '####\n####\n####\n####\n####\n####\n'
+        with patch("sys.stdout", new = StringIO()) as output:
+            r1.display()
+            self.assertEqual(output.getvalue(), expected)
+
+        r2 = Rectangle(2, 2)
+        expected = '##\n##\n'
+        with patch("sys.stdout", new = StringIO()) as output:
+            r2.display()
+            self.assertEqual(output.getvalue(), expected)
+
+    def test_handleXY(self):
+        '''Test how the function handle x and y'''
+        r1 = Rectangle(2, 3, 2, 2)
+        expected = "\n\n  ##\n  ##\n  ##\n"
+        with patch("sys.stdout", new = StringIO()) as output:
+            r1.display()
+            self.assertEqual(output.getvalue(), expected)
+
+        r2 = Rectangle(3, 2, 1, 0)
+        expected = " ###\n ###\n"
+        with patch("sys.stdout", new = StringIO()) as output:
+            r2.display()
+            self.assertEqual(output.getvalue(), expected)
+# ***************************************************************************
+# Test the __str__ method
+
+    def test_strMethodNormal(self):
+        '''test the return str of the method'''
+        r1 = Rectangle(4, 6, 2, 1, 12)
+        self.assertEqual(str(r1), "[Rectangle] (12) 2/1 - 4/6")
+
+        r2 = Rectangle(5, 5, 1)
+        self.assertEqual(str(r2), "[Rectangle] (1) 1/0 - 5/5")
