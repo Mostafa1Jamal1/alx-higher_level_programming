@@ -240,3 +240,75 @@ class TestRectangleClass(unittest.TestCase):
 
         r2 = Rectangle(5, 5, 1)
         self.assertEqual(str(r2), "[Rectangle] (1) 1/0 - 5/5")
+# ***************************************************************************
+# Test the update method in case of no-keyword arguments
+
+    def test_update_all(self):
+        '''Testing the normal cases of using the update method'''
+        r1 = Rectangle(10, 10, 10, 10)
+        r1.update(89, 2, 3, 4, 5)
+        self.assertEqual(str(r1), "[Rectangle] (89) 4/5 - 2/3")
+    
+    def test_update_4attrs(self):
+        r1 = Rectangle(10, 10, 10, 10)
+        r1.update(89, 2, 3, 4)
+        self.assertEqual(str(r1), "[Rectangle] (89) 4/10 - 2/3")
+
+    def test_update_3attrs(self):
+        r1 = Rectangle(10, 10, 10, 10)
+        r1.update(89, 2, 3)
+        self.assertEqual(str(r1), "[Rectangle] (89) 10/10 - 2/3")
+
+    def test_update_2attrs(self):
+        r1 = Rectangle(10, 10, 10, 10)
+        r1.update(89, 2)
+        self.assertEqual(str(r1), "[Rectangle] (89) 10/10 - 2/10")
+
+    def test_update_1attrs(self):
+        r1 = Rectangle(10, 10, 10, 10)
+        r1.update(89)
+        self.assertEqual(str(r1), "[Rectangle] (89) 10/10 - 10/10")
+# ***************************************************************************
+# Test the update method in case of key-worded arguments
+
+    def test_update_1attrs(self):
+        r1 = Rectangle(10, 10, 10, 10)
+        r1.update(height=1)
+        self.assertEqual(str(r1), "[Rectangle] (1) 10/10 - 10/1")
+
+        r1.update(width=1)
+        self.assertEqual(str(r1), "[Rectangle] (1) 10/10 - 1/1")
+
+    def test_update_2arrtrs(self):
+        r1 = Rectangle(10, 10, 10, 10)
+        r1.update(width=1, x=2)
+        self.assertEqual(str(r1), "[Rectangle] (1) 2/10 - 1/10")
+
+        r1.update(height=5, y=3)
+        self.assertEqual(str(r1), "[Rectangle] (1) 2/3 - 1/5")
+
+    def test_update_3arrtrs(self):
+        r1 = Rectangle(10, 10, 10, 10)
+        r1.update(width=1, x=2, id=89)
+        self.assertEqual(str(r1), "[Rectangle] (89) 2/10 - 1/10")
+
+        r1.update(height=1, y=2, id=8)
+        self.assertEqual(str(r1), "[Rectangle] (8) 2/2 - 1/1")
+
+    def test_update_all(self):
+        r1 = Rectangle(10, 10, 10, 10)
+        r1.update(x=1, height=2, y=3, width=4, id=89)
+        self.assertEqual(str(r1), "[Rectangle] (89) 1/3 - 4/2")
+# ***************************************************************************
+# Test the update method in case of key-worded and no-keyword arguments
+    
+    def test_update_kwargsANDargs(self):
+        r1 = Rectangle(10, 10, 10, 10)
+        r1.update(5, 3, width=1, x=2, id=89)
+        self.assertEqual(str(r1), "[Rectangle] (5) 10/10 - 3/10")
+
+    def test_update_kwargsANDemptyargs(self):
+        r1 = Rectangle(10, 10, 10, 10)
+        args = tuple()
+        r1.update(*args, width=1, x=2, id=89)
+        self.assertEqual(str(r1), "[Rectangle] (89) 2/10 - 1/10")
