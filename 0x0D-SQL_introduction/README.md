@@ -26,3 +26,8 @@ The database name will be passed as argument of `mysql` command
 	name VARCHAR(256)
 - The database name will be passed as an argument of the mysql command
 - If the table `first_table` already exists, your script should not fail
+
+
+`5-full_table.sql` -> a script that prints the full description of the table `first_table` from the database `hbtn_0c_0` in your MySQL server.
+- The database name will be passed as an argument of the `mysql` command
+
