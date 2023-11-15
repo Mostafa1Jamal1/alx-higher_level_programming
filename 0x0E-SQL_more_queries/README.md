@@ -14,3 +14,12 @@ Any file that does't have a description is for testing purposes
 - The `user_0d_1` password should be set to `user_0d_1_pwd`
 - If the user `user_0d_1` already exists, your script should not fail
 
+
+`2-create_read_user.sql` -> a script that creates the database `hbtn_0d_2` and the user `user_0d_2`.
+
+- `user_0d_2` should have only SELECT privilege in the database `hbtn_0d_2`
+- The `user_0d_2` password should be set to `user_0d_2_pwd`
+- If the database `hbtn_0d_2` already exists, your script should not fail
+- If the user `user_0d_2` already exists, your script should not fail
+
+
