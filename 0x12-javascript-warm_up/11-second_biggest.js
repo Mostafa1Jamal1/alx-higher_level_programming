@@ -6,7 +6,11 @@ if (argv.length < 2) {
   console.log(0);
 } else {
   let biggest = Number(argv[0]);
-  let secBig = Number(argv[0]);
+  let secBig = Number(argv[1]);
+  if (biggest < secBig) {
+    secBig = Number(argv[0]);
+    biggest = Number(argv[1]);
+  }
   for (const i of argv) {
     const num = Number(i);
     if (num > biggest) {
