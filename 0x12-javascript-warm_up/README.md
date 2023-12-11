@@ -77,3 +77,16 @@ If no argument passed, print 0
 If the number of arguments is 1, print 0
 
 
+`12-object.js` -> Update this script to replace the value 12 with 89:
+#!/usr/bin/node
+const myObject = {
+  type: 'object',
+  value: 12
+};
+console.log(myObject);
+/*
+YOUR CODE HERE
+*/
+console.log(myObject);
+
+
