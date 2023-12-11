@@ -36,3 +36,12 @@ c is cool
 
 If the argument can’t be converted to an integer, print “Not a number”
 
+
+
+`6-multi_languages_loop.js` -> a script that prints 3 lines: (like 1-multi_languages.js) but by using an array of string and a loop
+
+The first line: “C is fun”
+The second line: “Python is cool”
+The third line: “JavaScript is amazing”
+
+
