@@ -69,3 +69,11 @@ The second argument is the second integer
 The first argument is integer (argument can be cast as integer) used for computing the factorial
 Factorial of NaN is 1
 
+
+`11-second_biggest.js` -> a script that searches the second biggest integer in the list of arguments.
+
+You can assume all arguments can be converted to integer
+If no argument passed, print 0
+If the number of arguments is 1, print 0
+
+
