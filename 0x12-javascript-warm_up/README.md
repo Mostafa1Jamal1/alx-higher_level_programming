@@ -25,3 +25,8 @@ Otherwise, print “Arguments found”
 
 If no arguments are passed to the script, print “No argument”
 
+
+`4-concat.js` -> a script that prints two arguments passed to it, in the following format: “ is ”
+
+guillaume@ubuntu:~/0x12$ ./4-concat.js c cool
+c is cool
