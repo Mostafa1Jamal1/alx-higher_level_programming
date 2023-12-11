@@ -58,3 +58,9 @@ If the first argument can’t be converted to an integer, print “Missing size�
 You must use the character X to print the square
 
 
+`9-add.js` -> a script that prints the addition of 2 integers
+
+The first argument is the first integer
+The second argument is the second integer
+
+
