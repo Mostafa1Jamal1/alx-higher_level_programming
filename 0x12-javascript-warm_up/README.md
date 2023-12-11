@@ -90,3 +90,8 @@ YOUR CODE HERE
 console.log(myObject);
 
 
+`13-add.js` -> a function that returns the addition of 2 integers.
+
+The function must be visible from outside
+The name of the function must be add
+
