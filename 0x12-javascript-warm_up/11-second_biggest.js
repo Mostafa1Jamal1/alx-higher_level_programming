@@ -5,10 +5,10 @@ const argv = process.argv.slice(2);
 if (argv.length < 2) {
   console.log(0);
 } else {
-  let biggest = parseInt(argv[0]);
-  let secBig;
+  let biggest = Number(argv[0]);
+  let secBig = Number(argv[1]);;
   for (const i of argv) {
-    const num = parseInt(i);
+    const num = Number(i);
     if (num > biggest) {
       secBig = biggest;
       biggest = num;
