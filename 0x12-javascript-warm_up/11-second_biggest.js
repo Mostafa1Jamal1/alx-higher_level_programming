@@ -17,6 +17,9 @@ if (argv.length < 2) {
       secBig = biggest;
       biggest = num;
     }
+    if (num > secBig && num < biggest) {
+      secBig = num;
+    }
   }
   console.log(secBig);
 }
