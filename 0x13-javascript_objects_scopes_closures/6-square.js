@@ -2,12 +2,9 @@
 const Square1 = require('./5-square');
 
 module.exports = class Square extends Square1 {
-  constructor(size) {
-    super(size);
-  }
   // prints the rectangle using the character c
   // If c is undefined, use the character X
-  charPrint(c) {
+  charPrint (c) {
     // check the character c
     let chr = c;
     if (!c) {
