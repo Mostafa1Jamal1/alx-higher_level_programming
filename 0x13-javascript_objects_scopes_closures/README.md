@@ -12,3 +12,7 @@ Any file that does't have a description -if there any- is for testing purposes
 The constructor must take 2 arguments w and h
 Initialize the instance attribute width with the value of w
 Initialize the instance attribute height with the value of h
+
+
+`2-rectangle.js` -> same as `1-rectangle.js` and:
+If w or h is equal to 0 or not a positive integer, create an empty object
