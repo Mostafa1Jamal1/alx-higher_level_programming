@@ -20,3 +20,9 @@ If w or h is equal to 0 or not a positive integer, create an empty object
 
 `3-rectangle.js` -> same as `2-rectangle.js` and:
 Create an instance method called print() that prints the rectangle using the character X
+
+
+`4-rectangle.js` -> same as `3-rectangle.js` and:
+Create an instance method called rotate() that exchanges the width and the height of the rectangle
+Create an instance method called double() that multiples the width and the height of the rectangle by 2
+
