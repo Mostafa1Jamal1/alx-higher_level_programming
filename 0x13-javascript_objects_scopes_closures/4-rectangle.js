@@ -19,14 +19,16 @@ module.exports = class Rectangle {
       console.log(row);
     }
   }
+
   // exchanges the width and the height of the rectangle
-  rotate() {
+  rotate () {
     const tmp = this.width;
     this.width = this.height;
     this.height = tmp;
   }
+
   // multiples the width and the height of the rectangle by 2
-  double() {
+  double () {
     this.width *= 2;
     this.height *= 2;
   }
