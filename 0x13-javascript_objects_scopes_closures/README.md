@@ -40,3 +40,6 @@ If c is undefined, use the character X
 `7-occurrences.js` -> a function that returns the number of occurrences in a list:
 Prototype: exports.nbOccurences = function (list, searchElement)
 
+
+`8-esrever.js` -> a function that returns the reversed version of a list:
+Prototype: exports.esrever = function (list)
