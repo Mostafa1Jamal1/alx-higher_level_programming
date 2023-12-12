@@ -26,3 +26,8 @@ Create an instance method called print() that prints the rectangle using the cha
 Create an instance method called rotate() that exchanges the width and the height of the rectangle
 Create an instance method called double() that multiples the width and the height of the rectangle by 2
 
+
+`5-square.js` -> a class Square that defines a square and inherits from Rectangle of 4-rectangle.js:
+The constructor must take 1 argument: size
+The constructor of Rectangle must be called (by using super())
+
