@@ -16,3 +16,7 @@ Initialize the instance attribute height with the value of h
 
 `2-rectangle.js` -> same as `1-rectangle.js` and:
 If w or h is equal to 0 or not a positive integer, create an empty object
+
+
+`3-rectangle.js` -> same as `2-rectangle.js` and:
+Create an instance method called print() that prints the rectangle using the character X
