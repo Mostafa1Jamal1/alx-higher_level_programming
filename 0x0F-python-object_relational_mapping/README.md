@@ -26,4 +26,4 @@ The script connects to a MySQL server running on localhost at port 3306
 Results will be sorted in ascending order by states.id
 
 
-
+`3-my_safe_filter_states.py` -> the same as `2-my_filter_states.py` but safe from MySQL injections!
