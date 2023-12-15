@@ -1,0 +1,14 @@
+# 0x0F. Python - Object-relational mapping project:
+
+
+Description for all the files and directories in this directory
+Any file that does't have a description -if there any- is for testing purposes
+
+
+`0-select_states.py` -> a script that lists all states from the database `hbtn_0e_0_usa`:
+
+The script takes 3 arguments: mysql username, mysql password and database name (no argument validation)
+The script connects to a MySQL server running on localhost at port 3306
+Results is sorted in ascending order by states.id
+
+
