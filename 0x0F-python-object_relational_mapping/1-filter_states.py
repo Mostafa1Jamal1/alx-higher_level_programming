@@ -17,7 +17,7 @@ if __name__ == '__main__':
                            passwd=password, db=dbname, charset="utf8")
     cur = conn.cursor()
     cur.execute("SELECT * FROM states\
-                WHERE name LIKE 'N%'\
+                WHERE name LIKE 'N_%'\
                 ORDER BY id")
     query_rows = cur.fetchall()
     for row in query_rows:
