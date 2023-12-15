@@ -17,3 +17,13 @@ Results is sorted in ascending order by states.id
 The script takes 3 arguments: mysql username, mysql password and database name (no argument validation)
 The script connects to a MySQL server running on localhost at port 3306
 Results must be sorted in ascending order by states.id
+
+
+`2-my_filter_states.py` -> a script that takes in an argument and displays all values in the states table of `hbtn_0e_0_usa` where name matches the argument.
+
+The script should take 4 arguments: mysql username, mysql password, database name and state name searched (no argument validation)
+The script connects to a MySQL server running on localhost at port 3306
+Results will be sorted in ascending order by states.id
+
+
+
