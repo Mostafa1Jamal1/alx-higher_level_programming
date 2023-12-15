@@ -12,3 +12,8 @@ The script connects to a MySQL server running on localhost at port 3306
 Results is sorted in ascending order by states.id
 
 
+`1-filter_states.py` -> a script that lists all states with a name starting with N (upper N) from the database `hbtn_0e_0_usa`:
+
+The script takes 3 arguments: mysql username, mysql password and database name (no argument validation)
+The script connects to a MySQL server running on localhost at port 3306
+Results must be sorted in ascending order by states.id
