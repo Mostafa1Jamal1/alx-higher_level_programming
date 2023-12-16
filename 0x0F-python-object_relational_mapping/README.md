@@ -35,3 +35,10 @@ The script takes 3 arguments: mysql username, mysql password and database name
 The script connects to a MySQL server running on localhost at port 3306
 Results is sorted in ascending order by cities.id
 
+
+`5-filter_cities.py` -> a script that takes in the name of a state as an argument and lists all cities of that state, using the database `hbtn_0e_4_usa`
+
+The script takes 4 arguments: mysql username, mysql password, database name and state name (SQL injection free!)
+The script connects to a MySQL server running on localhost at port 3306
+Results must be sorted in ascending order by cities.id
+
