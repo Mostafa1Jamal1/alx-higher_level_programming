@@ -18,7 +18,7 @@ if __name__ == '__main__':
                            passwd=password, db=dbname, charset="utf8")
     cur = conn.cursor()
     cur.execute("SELECT * FROM states\
-                WHERE name LIKE '{}'\
+                WHERE BINARY name = BINARY '{}'\
                 ORDER BY id".format(namematch))
     query_rows = cur.fetchall()
     for row in query_rows:
