@@ -5,7 +5,7 @@
 import sys
 from model_state import Base, State
 from sqlalchemy import create_engine
-from sqlalchemy.orm import Session
+from sqlalchemy.orm import sessionmaker
 
 
 if __name__ == "__main__":
@@ -17,7 +17,7 @@ if __name__ == "__main__":
                            username, password, dbname),
                            pool_pre_ping=True)
     Base.metadata.create_all(engine)
-    session = Session(engine)
+    session = sessionmaker(bind=engine)()
     for state in session.query(State).order_by(State.id).all():
         print("{}: {}".format(state.id, state.name))
     session.close()
