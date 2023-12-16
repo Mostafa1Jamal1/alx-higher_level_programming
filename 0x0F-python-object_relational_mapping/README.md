@@ -52,3 +52,12 @@ State class:
 	class attribute `name` that represents a column of a string with maximum 128 characters and can’t be null
 The script connects to a MySQL server running on localhost at port 3306
 WARNING: all classes who inherit from Base must be imported before calling `Base.metadata.create_all(engine)`
+
+
+`7-model_state_fetch_all.py` -> a script that lists `all State` objects from the database `hbtn_0e_6_usa`
+
+Your script should take 3 arguments: `mysql username`, `mysql password` and `database name`
+The script connects to a MySQL server running on localhost at port 3306
+Results will be sorted in ascending order by `states.id`
+
+
