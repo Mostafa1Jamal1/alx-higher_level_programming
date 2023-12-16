@@ -27,3 +27,11 @@ Results will be sorted in ascending order by states.id
 
 
 `3-my_safe_filter_states.py` -> the same as `2-my_filter_states.py` but safe from MySQL injections!
+
+
+`4-cities_by_state.py` -> a script that lists all cities from the database `hbtn_0e_4_usa`
+
+The script takes 3 arguments: mysql username, mysql password and database name
+The script connects to a MySQL server running on localhost at port 3306
+Results is sorted in ascending order by cities.id
+
