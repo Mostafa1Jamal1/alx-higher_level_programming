@@ -66,3 +66,7 @@ Results will be sorted in ascending order by `states.id`
 
 `9-model_state_filter_a.py` -> a script that lists all State objects that contain the letter a from the database `hbtn_0e_6_usa`
 
+
+
+`10-model_state_my_get.py` -> a script that prints the State object with the name passed as argument from the database `hbtn_0e_6_usa`
+
