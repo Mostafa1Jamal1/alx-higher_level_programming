@@ -61,3 +61,4 @@ The script connects to a MySQL server running on localhost at port 3306
 Results will be sorted in ascending order by `states.id`
 
 
+`8-model_state_fetch_first.py` -> a script that prints the first State object from the database `hbtn_0e_6_usa`
