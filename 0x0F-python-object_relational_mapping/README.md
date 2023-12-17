@@ -70,3 +70,7 @@ Results will be sorted in ascending order by `states.id`
 
 `10-model_state_my_get.py` -> a script that prints the State object with the name passed as argument from the database `hbtn_0e_6_usa`
 
+
+
+`11-model_state_insert.py`-> a script that adds the State object “Louisiana” to the database `hbtn_0e_6_usa`
+
