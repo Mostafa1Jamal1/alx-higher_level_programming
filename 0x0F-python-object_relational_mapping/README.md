@@ -62,3 +62,7 @@ Results will be sorted in ascending order by `states.id`
 
 
 `8-model_state_fetch_first.py` -> a script that prints the first State object from the database `hbtn_0e_6_usa`
+
+
+`9-model_state_filter_a.py` -> a script that lists all State objects that contain the letter a from the database `hbtn_0e_6_usa`
+
