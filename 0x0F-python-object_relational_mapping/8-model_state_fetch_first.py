@@ -1,5 +1,6 @@
 #!/usr/bin/python3
-''' a script that prints the first State object from the database hbtn_0e_6_usa '''
+''' a script that prints the first State object
+from the database hbtn_0e_6_usa '''
 
 import sys
 from sqlalchemy.orm import sessionmaker
@@ -18,4 +19,3 @@ if __name__ == "__main__":
     session = sessionmaker(bind=engine)()
     row = session.query(State)[0]
     print("{}: {}".format(row.id, row.name))
-    
