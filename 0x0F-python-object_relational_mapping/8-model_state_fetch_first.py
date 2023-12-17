@@ -15,7 +15,12 @@ if __name__ == "__main__":
 
     engine = create_engine("mysql+mysqldb://{}:{}@localhost:3306/{}".format(
                            username, password, dbname), pool_pre_ping=True)
-    Base.metadata.create_all(engine)
+
     session = sessionmaker(bind=engine)()
-    row = session.query(State)[0]
-    print("{}: {}".format(row.id, row.name))
+    query = session.query(State).order_by(State.id)
+
+    try:
+        first_State = query.first()
+        print("{}: {}".format(first_State.id, first_State.name))
+    except Exception:
+        print("Nothing")
