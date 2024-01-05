@@ -12,3 +12,7 @@ Any file that does't have a description -if there any- is for testing purposes
 
 Display only body of a 200 status code response
 
+
+`2-delete.sh` -> a Bash script that sends a DELETE request to the URL passed as the first argument and displays the body of the response
+
+
