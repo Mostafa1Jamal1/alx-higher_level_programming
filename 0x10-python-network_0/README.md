@@ -29,3 +29,9 @@ A header variable X-School-User-Id must be sent with the value 98
 A variable email must be sent with the value test@gmail.com
 A variable subject must be sent with the value I will always be here for PLD
 
+
+`6-peak.py` -> a function that finds a peak in a list of unsorted integers.
+Prototype: def find_peak(list_of_integers):
+
+
+`6-peak.txt` -> contain the complexity of the algorithm
