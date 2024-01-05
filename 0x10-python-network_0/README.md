@@ -17,3 +17,9 @@ Display only body of a 200 status code response
 
 
 `3-methods.sh` -> a Bash script that takes in a URL and displays all HTTP methods the server will accept.
+
+
+`4-header.sh` -> a Bash script that takes in a URL as an argument, sends a GET request to the URL, and displays the body of the response
+
+A header variable X-School-User-Id must be sent with the value 98
+
