@@ -20,3 +20,6 @@ No check arguments passed to the script (number or type)
 `3-error_code.py` -> a Python script that takes in a URL, sends a request to the URL and displays the body of the response (decoded in utf-8).
 If any urllib.error.HTTPError exception occur it will print:
 "Error code: followed by the HTTP status code"
+
+
+`4-hbtn_status.py` -> a Python script that fetches https://alx-intranet.hbtn.io/status
