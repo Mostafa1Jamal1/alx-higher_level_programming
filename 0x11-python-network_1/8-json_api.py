@@ -9,7 +9,7 @@ import sys
 
 if __name__ == "__main__":
 
-    url = 'http://36595c7ea186.6ad0eb84.alx-cod.online:5000/search_user'
+    url = 'http://0.0.0.0:5000/search_user'
     data = {'q': sys.argv[1] if len(sys.argv) > 1 else ""}
 
     r = requests.post(url, data=data)
