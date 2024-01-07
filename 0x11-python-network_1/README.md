@@ -32,3 +32,5 @@ If any urllib.error.HTTPError exception occur it will print:
 The email is sent in the email variable
 No check arguments passed to the script (number or type)
 
+
+`7-error_code.py` -> same as `3-error_code.py` but uses different package 'requests'
