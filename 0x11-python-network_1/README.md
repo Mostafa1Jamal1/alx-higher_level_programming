@@ -34,3 +34,12 @@ No check arguments passed to the script (number or type)
 
 
 `7-error_code.py` -> same as `3-error_code.py` but uses different package 'requests'
+
+
+`8-json_api.py` -> a Python script that takes in a letter and sends a POST request to http://36595c7ea186.6ad0eb84.alx-cod.online:5000/search_user with the letter as a parameter.
+The letter is sent in the variable q
+If no argument is given, set q=""
+If the response body is properly JSON formatted and not empty, display the id and name like this: [<id>] <name>
+Otherwise:
+	- Display Not a valid JSON if the JSON is invalid
+	- Display No result if the JSON is empty
